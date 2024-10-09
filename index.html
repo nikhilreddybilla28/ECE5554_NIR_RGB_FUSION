@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Robust Autonomous Navigation in Adverse Weather Conditions Using RGB-NIR Image Fusion</title>
+  <title>RGB-NIR Fusions</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -121,12 +121,12 @@
 </section>
 
 
-<!-- Teaser video -->
+<!-- Teaser video 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+        
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -135,7 +135,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -159,6 +159,77 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Problem Statement -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Problem Statement</h2>
+        <div class="content has-text-justified">
+          <p>
+            Current autonomous navigation systems are often unreliable in adverse weather conditions such as rain, fog, and snow, where visibility is reduced, and sensors struggle to perform effectively. Traditional RGB (Red, Green, Blue) imaging alone is not sufficient to handle these challenges, leading to errors in detecting drive scenes and making decisions.
+            To improve perception in such difficult environments, a better approach is needed. Combining RGB imaging with Near-Infrared (NIR) images which are less impacted by poor visibility, can provide a clearer and more reliable view of the surroundings. The Near-Infrared range of light, having greater wavelengths than the visible range, can penetrate more through suspended particles in the camera’s view. This project aims to develop a solution that uses RGB-NIR fusion to enhance the accuracy, safety, and reliability of autonomous navigation systems in challenging weather conditions.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Problem Statement -->
+
+<!-- Experimental Setup -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Problem Statement</h2>
+        <div class="content has-text-justified">
+          <p>
+            This project focuses on enhancing autonomous navigation in adverse weather using RGB-NIR image fusion. The approach begins with data acquisition from the IDDAW [1] and Dark Vision Dataset (DVD) [2], capturing driving scenes under poor lighting and harsh weather conditions. To ensure accuracy, image alignment will be applied to validate image pairs
+            RGB and NIR images are fused using multispectral techniques, combining detailed color information with NIR’s ability to enhance visibility in low-light conditions. The fused images are then processed using deep learning-based segmentation models like DeepLab and InternImage, to identify key elements in drive scenes.
+
+            To gauge the efficacy of fused RGB-NIR images, we will compare the improvement in image segmentation for a variety of adverse weather conditions individually.
+            <ul>
+              <li>Low-light conditions</li>
+              <li>Rain</li>
+              <li>Snow</li>
+              <li>Fog/mist/haze</li>
+              <li>Glare from the sun or other sources</li>
+          </ul>
+            Another important consideration is the generalizability of the model trained on location specific datasets. In our case, the IDDAW and the Dark Vision datasets are based on the Indian and German road and traffic scenes.
+
+            Finally, the system will be tested and validated in both real-world and simulated environments, comparing its performance to traditional RGB-based models. This approach aims to significantly improve navigation accuracy and reliability in challenging weather conditions.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experimental Setup -->
+
+<!-- Success factors  -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Success factors</h2>
+        <div class="content has-text-justified">
+          <p>
+            <li>Gain insights into the improvement of image segmentation for a variety of individual adverse conditions</li>
+            <li>Highlight why some conditions are better dealt with than others</li>
+            <li>Gauge the overall efficacy of RGB-NIR fused images across conditions and datasets (domain adaptation ?)</li>
+            <li>Understand the factors responsible for the model's change in performance across datasets from starkly different locations</li>
+            <li>Potentially capturing and infusing other wavelengths of light, i.e. introducing more channels into the image, to test the model's boost in accurate segmentation</li>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Success factors -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -202,28 +273,28 @@
 
 
 
-<!-- Youtube video -->
+<!-- Youtube video 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
+      
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+            
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
+<!-- Video carousel 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -231,21 +302,21 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+             Your video file here 
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+            <!-- Your video file here
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here 
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -253,7 +324,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -261,7 +332,7 @@
 
 
 
-<!-- Paper poster -->
+<!-- Paper poster 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -272,7 +343,7 @@
         
       </div>
     </div>
-  </section>
+  </section>  -->
 <!--End paper poster -->
 
 
