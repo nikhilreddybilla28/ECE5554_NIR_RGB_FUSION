@@ -213,7 +213,7 @@
 
 
 <!-- Problem Statement -->
-<section class="section hero is-dark">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -233,7 +233,7 @@
 <!-- End Problem Statement -->
 
 <!-- Approach -->
-<section class="section hero is-light">
+<section class="section hero is-dark">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -295,7 +295,7 @@
   </div>
 </section End Experimental Setup -->
 
-<section class="section hero is-dark">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -308,33 +308,88 @@
                 <li><strong>Metrics:</strong> mIoU (Mean Intersection over Union).</li>
                 <li><strong>Baselines:</strong> Compared cityscapes RGB, IDDAW RGB-only and IDDAW NIR-only segmentation with the fused approach.</li>
             </ul>
+          </p>
+  
+        <h3>Detailed Results</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dataset</th>
+                    <th>Test →</th>
+                    <th colspan="5" style="text-align:center;">Conditions</th>
+                    <th rowspan="2">IDD-AW</th>
+                </tr>
+                <tr>
+                    <th>Train ↓</th>
+                    <th>CS</th>
+                    <th>Rain</th>
+                    <th>Fog</th>
+                    <th>LL</th>
+                    <th>Snow</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS RGB</td>
+                    <td>83</td>
+                    <td>-</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>42</td>
+                    <td>43</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>ACDC RGB</td>
+                    <td>-</td>
+                    <td>75</td>
+                    <td>47</td>
+                    <td>51</td>
+                    <td>42</td>
+                    <td>38</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>IDD RGB</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>73</td>
+                    <td>52</td>
+                    <td>55</td>
+                    <td>50</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>IDD-AW RGB</td>
+                    <td>49</td>
+                    <td>51</td>
+                    <td>62</td>
+                    <td>64</td>
+                    <td>62</td>
+                    <td>53</td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td>IDD-AW NIR</td>
+                    <td>-</td>
+                    <td>61</td>
+                    <td>58</td>
+                    <td>57</td>
+                    <td>51</td>
+                    <td>61</td>
+                </tr>
+                <tr>
+                    <td>IDD-AW NIR+RGB</td>
+                    <td>-</td>
+                    <td>66</td>
+                    <td>65</td>
+                    <td>63</td>
+                    <td>53</td>
+                    <td>67</td>
+                </tr>
+            </tbody>
+        </table>
 
-  <h4>Results</h4>
-  <table>
-      <thead>
-          <tr>
-              <th>Input Modality</th>
-              <th>mIoU (%)</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>RGB-only</td>
-              <td>53</td>
-              <td>47</td>
-          </tr>
-          <tr>
-              <td>NIR-only</td>
-              <td>60</td>
-              <td>54</td>
-          </tr>
-          <tr>
-              <td>RGB-NIR Fused</td>
-              <td>67</td>
-              <td>62</td>
-          </tr>
-      </tbody>
-  </table>
   <p>
       Early fusion outperformed single-modality baselines, particularly in low-light and foggy conditions. Fusion weighting was tuned, with equal RGB and NIR emphasis yielding optimal results.
   </p>
