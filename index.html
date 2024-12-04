@@ -232,19 +232,30 @@
 </section>
 <!-- End Problem Statement -->
 
-<section id="approach">
-  <h3>Approach</h3>
-  <ul>
-      <li><strong>Data Preparation:</strong> Utilize the IDD-AW dataset, which contains 5000 paired RGB and NIR images with pixel-level annotations across rain, fog, snow, and low-light conditions.</li>
-      <li><strong>Data Fusion:</strong> Fuse RGB and NIR images through early fusion (stacking channels) and evaluate this representation in the segmentation pipeline.</li>
-      <li><strong>Model Architecture:</strong> Train the InternImage-b segmentation model with RGB, NIR, and fused inputs.</li>
-      <li><strong>Safe-mIoU Metric:</strong> Evaluate segmentation quality using both traditional mIoU and the novel Safe-mIoU metric, which penalizes unsafe mispredictions.</li>
-      <li><strong>Code Utilization:</strong> Publicly available implementations of InternImage were modified for multi-modal input processing. Custom fusion preprocessing was developed for this project.</li>
-  </ul>
-  <p>
-      Obstacles included ensuring alignment between RGB and NIR data, which was addressed through manual and automated synchronization methods.
-  </p>
+<!-- Approach -->
+<section class="section hero is-dark">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Approach</h2>
+        <div class="content has-text-justified">
+          <p>
+            <li><strong>Data Preparation:</strong> Utilize the IDD-AW dataset, which contains 5000 paired RGB and NIR images with pixel-level annotations across rain, fog, snow, and low-light conditions.</li>
+            <li><strong>Data Fusion:</strong> Fuse RGB and NIR images through early fusion (stacking channels) and evaluate this representation in the segmentation pipeline.</li>
+            <li><strong>Model Architecture:</strong> Train the InternImage-b segmentation model with RGB, NIR, and fused inputs.</li>
+            <li><strong>Safe-mIoU Metric:</strong> Evaluate segmentation quality using both traditional mIoU and the novel Safe-mIoU metric, which penalizes unsafe mispredictions.</li>
+            <li><strong>Code Utilization:</strong> Publicly available implementations of InternImage were modified for multi-modal input processing. Custom fusion preprocessing was developed for this project.</li>
+
+          </p>
+          <p>
+            Obstacles included ensuring alignment between RGB and NIR data, which was addressed through manual and automated synchronization methods.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <!-- Experimental Setup -->
 <section class="section hero is-light">
