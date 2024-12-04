@@ -163,15 +163,89 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Teaser Figure -->
+<section class="section hero is-dark">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Figures</h2>
+        <div class="content has-text-justified">
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/iddaw_bg.png" alt="RGB-NIR COMPARISION"/>
+        <h2 class="subtitle has-text-centered">
+          RGB-NIR COMPARISION.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/00000024_rgb.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          FOGGY Conditions.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/00000009_rgb.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         SNOW Conditions.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/00000014_rgb.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+       LOWLIGHT Conditions.
+     </h2>
+   </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/00000000_rgb.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        RAINY Conditions.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<style>
+  .carousel .carousel-image {
+    max-width: 100%;
+    max-height: 300px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto; 
+  }
+</style>
+<!-- End image carousel -->
+
+
 <!-- Problem Statement -->
 <section class="section hero is-dark">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Problem Statement</h2>
+        <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Current autonomous navigation systems are often unreliable in adverse weather conditions such as rain, fog, and snow, where visibility is reduced, and sensors struggle to perform effectively. Traditional RGB (Red, Green, Blue) imaging alone is not sufficient to handle these challenges, leading to errors in detecting drive scenes and making decisions.
+            In recent years, there have been several incidents that have exposed the drawbacks of autonomous systems when operating in adverse weather conditions. Heavy rain, dense fog, lowlight, glare and snow have all caused ML models to mispredict, making it harder for these systems to make correct decisions and navigate safely. In snowy conditions, for example, self-driving cars have struggled to detect pedestrians and obstacles, while in fog, some systems have been completely unable to "see" their surroundings. 
+            Current autonomous navigation systems are often unreliable in adverse weather conditions such as rain, fog, and snow, where visibility is reduced, and sensors struggle to perform effectively. Traditional RGB  imaging alone is not sufficient to handle these challenges, leading to errors in detecting drive scenes and making decisions.
             To improve perception in such difficult environments, a better approach is needed. Combining RGB imaging with Near-Infrared (NIR) images which are less impacted by poor visibility, can provide a clearer and more reliable view of the surroundings. The Near-Infrared range of light, having greater wavelengths than the visible range, can penetrate more through suspended particles in the camera’s view. This project aims to develop a solution that uses RGB-NIR fusion to enhance the accuracy, safety, and reliability of autonomous navigation systems in challenging weather conditions.
 
           </p>
