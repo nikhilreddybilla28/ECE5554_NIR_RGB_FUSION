@@ -265,7 +265,7 @@
 </section>
 
 
-<!-- Experimental Setup -->
+<!-- Experimental Setup 
 <section class="section hero is-dark">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -293,8 +293,53 @@
       </div>
     </div>
   </div>
+</section End Experimental Setup -->
+
+<section class="section hero is-dark">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments and Results</h1>
+        <h2 class="title is-3">Experimental Setup</h2>
+        <div class="content has-text-justified">
+          <p>
+            <ul>
+                <li><strong>Dataset:</strong> IDD-AW with a 70-20-10 train-validation-test split.</li>
+                <li><strong>Metrics:</strong> mIoU (Mean Intersection over Union).</li>
+                <li><strong>Baselines:</strong> Compared cityscapes RGB, IDDAW RGB-only and IDDAW NIR-only segmentation with the fused approach.</li>
+            </ul>
+
+  <h4>Results</h4>
+  <table>
+      <thead>
+          <tr>
+              <th>Input Modality</th>
+              <th>mIoU (%)</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>RGB-only</td>
+              <td>53</td>
+              <td>47</td>
+          </tr>
+          <tr>
+              <td>NIR-only</td>
+              <td>60</td>
+              <td>54</td>
+          </tr>
+          <tr>
+              <td>RGB-NIR Fused</td>
+              <td>67</td>
+              <td>62</td>
+          </tr>
+      </tbody>
+  </table>
+  <p>
+      Early fusion outperformed single-modality baselines, particularly in low-light and foggy conditions. Fusion weighting was tuned, with equal RGB and NIR emphasis yielding optimal results.
+  </p>
 </section>
-<!-- End Experimental Setup -->
+
 
 <!-- Success factors  -->
 <section class="section hero is-light">
