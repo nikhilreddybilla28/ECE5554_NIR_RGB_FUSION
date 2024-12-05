@@ -124,19 +124,46 @@ body {
   font-size: 0;
 }
 
+
 .results-carousel1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust the space between items */
   overflow: hidden;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100vh; /* Set to full viewport height */
+  background-color: #f4f4f4; /* Optional background for better contrast */
+  padding: 0;
+  margin: 0;
 }
 
 .results-carousel1 .item2 {
   position: relative;
-  max-width: 50%;
-  max-height: 100%; 
-  margin: 10px;
-  overflow: hidden;
-  padding: 20px;
-  font-size: 0;
+  flex: 0 0 auto; /* Prevent items from shrinking */
+  width: 100%; /* Make items fit the entire carousel */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
+
+.results-carousel1 .item2 img {
+  width: 100%;
+  height: auto; /* Ensure proper scaling */
+  max-height: 90vh; /* Prevent image from exceeding viewport height */
+  object-fit: contain; /* Ensure the image fits well within the container */
+  display: block;
+}
+
+.results-carousel1 .item2 h2 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
 
 .slider-pagination .slider-page {
   background: #000000;
