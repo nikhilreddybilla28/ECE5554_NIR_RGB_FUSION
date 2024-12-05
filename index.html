@@ -411,7 +411,7 @@
       <li><strong>Failure Cases:</strong> Misclassification of overlapping objects under  snow and inconsistent performance for distant objects.</li>
   </ul>
   <figure>
-      <img src="static/images/00000000_rgb.png" alt="Qualitative Results: Segmentation Comparisons" />
+      <img src="static/images/Qual_res.jpeg" alt="Qualitative Results: Segmentation Comparisons of NIR/RGB/FUSED" />
       <figcaption>Examples of input images NIR-only predictions, , RGB-only predictions, fused predictions and Ground Truth</figcaption>
   </figure>
 </section>
@@ -419,14 +419,20 @@
 <section id="conclusion">
   <h3>Conclusion</h3>
   <p>
-      This report described a novel approach to enhancing semantic segmentation in adverse weather conditions through RGB-NIR fusion. By leveraging the IDD-AW dataset and evaluating results with Safe-mIoU, we demonstrated the significant benefits of multi-modal data for robust and safe segmentation. Future work includes optimizing fusion strategies and exploring advanced loss functions tailored for Safe-mIoU.
+      This report described a novel approach to enhancing semantic segmentation in adverse weather conditions through RGB-NIR fusion. By leveraging the IDD-AW dataset and evaluating results, we demonstrated the significant benefits of multi-modal data for robust and safe segmentation. Future work includes optimizing fusion strategies and exploring advanced fusion techniques and loss functions tailored for segmentation in adverse weather conditions.
   </p>
 </section>
 
 <section id="references">
   <h3>References</h3>
   <p>
-      *(List all references used, including the IDD-AW paper and additional resources on RGB-NIR fusion, semantic segmentation, and related datasets.)*
+  <ul>
+    <li>A Review on Deep Learning Techniques Applied to Semantic Segmentation <a href="https://arxiv.org/abs/1704.06857" target="_blank"></a></li>
+    <li>DD-AW: A Benchmark for Safe and Robust Segmentation of Drive Scenes in Unstructured Traffic and Adverse Weather <a href="https://paperswithcode.com/paper/idd-aw-a-benchmark-for-safe-and-robust" target="_blank"></a></li>
+    
+    <li>Code developed upon <a href="https://github.com/OpenGVLab/InternImage" target="_blank">InternImage codebase</a></li>
+    <li>https://github.com/open-mmlab/mmsegmentation/tree/v0.27.0</li>
+  </ul>
   </p>
 </section>
 
@@ -488,11 +494,6 @@ End Success factors -->
   </div>
 </section> -->
 <!-- End video carousel -->
-
-
-
-
-
 
 
 <!--BibTex citation -->
