@@ -130,7 +130,7 @@ body {
 
 .results-carousel1 .item {
   position: relative;
-  max-width: 100%;
+  max-width: 50%;
   max-height: 100%; 
   margin: 10px;
   overflow: hidden;
