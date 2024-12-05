@@ -124,8 +124,18 @@ body {
   font-size: 0;
 }
 
-.results-carousel video {
-  margin: 0;
+.results-carousel1 {
+  overflow: hidden;
+}
+
+.results-carousel1 .item {
+  position: relative;
+  max-width: 50%;
+  max-height: 50%; 
+  margin: 10px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
 }
 
 .slider-pagination .slider-page {
